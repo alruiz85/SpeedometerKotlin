@@ -39,11 +39,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         map = googleMap
         locationManager = LocationManager(this@MainActivity, this@MainActivity)
         locationManager.start()
-
-        // Add a marker in Sydney and move the camera
-        //val sydney = LatLng(-34.0, 151.0)
-        //mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }
 
     override fun onLocationChanged(location: Location) {
